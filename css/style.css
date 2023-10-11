@@ -1,14 +1,27 @@
+/* palette */
+ :root{
+    --blue: #1B72E8;
+    --light-grey: #F8F9FA;
+    --grey: #F7F7F7;
+    --dark-grey: #8590a3;
+    --orange: #FF8F00;
+}
+
 /* RESET */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+img{
+    max-width: 100%;
+}
+
 /* wrapper */
 .wrapper{
     width: 100%;
     height: 100vh;
-    background-color: blanchedalmond;
+    background-color: white;
 }
 /* header */
 .header-nav{
@@ -18,22 +31,43 @@
     background-color: aquamarine;
 }
 /* main */
+
 .ms_row{ 
     display: flex;
 }
 .ms_col-home{
     width: 4.5rem;
     height: calc(100vh - 5rem);
+    background-color: lightslategray;
+    flex-shrink: 0;
 }
+
 .ms_col-boolean{
     width: calc(100% - 4.5rem);
     height: calc(100vh - 5rem);
     overflow-y: auto;
 }
+/* table prossime classi */
+.img-avatar{
+    width: 30px;
+}
+
+/* tablet */
+@media screen and (min-width: 768px){
+    .row{
+        display: flex;
+    }
+    .ms_studente{
+        order: 2 ;
+    }
+    .ms_boolean{
+        order: 1;
+    }
+}
+
+/* deskyop */
 @media screen and (min-width: 1024px) {
     .ms_col-home{
         width: 7rem;
-
     }
-    
 }
