@@ -30,6 +30,13 @@ img{
     /*position: fixed; */
     background-color: aquamarine;
 }
+/* logo */
+.ms_logo-mobile{
+    height: 3rem;
+}
+.ms_logo{
+    height: 2rem;
+}
 /* main */
 
 .ms_row{ 
