@@ -1,6 +1,7 @@
 /* palette */
  :root{
     --blue: #1B72E8;
+    --blue-botton: #165BBA;
     --light-grey: #F8F9FA;
     --grey: #F7F7F7;
     --dark-grey: #8590a3;
@@ -27,7 +28,6 @@ img{
 .header-nav{
     width: 100%;
     height: 5rem;
-    /*position: fixed; */
     background-color: aquamarine;
 }
 /* logo */
@@ -38,9 +38,22 @@ img{
     height: 2rem;
 }
 /* main */
+.ms_container-boolean{
+    background-color: var(--blue);
+}
 
 .ms_row{ 
     display: flex;
+}
+/* button section boolean*/
+.ms_btn{
+    background-color: var(--blue-botton);
+    color: white;
+    border-radius: 15px;
+    border: none;
+    padding: 3px;
+    font-size: 10px;
+    
 }
 .ms_col-home{
     width: 4.5rem;
@@ -64,12 +77,11 @@ img{
     .row{
         display: flex;
     }
-    .ms_studente{
-        order: 2 ;
+    .ms_col-home{
+        width: 7rem;
     }
-    .ms_boolean{
-        order: 1;
-    }
+
+   
 }
 
 /* deskyop */
